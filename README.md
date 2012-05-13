@@ -46,7 +46,7 @@ This will ignore the bash alias and directly run the mvn command.
 
 ## Example Output
 
-![example output](maven-colored.png)
+![example output](https://github.com/hgoebl/entintar/blob/master/maven-colored.png?raw=true)
 
 ## Extend
 
