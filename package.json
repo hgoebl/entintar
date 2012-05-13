@@ -1,0 +1,29 @@
+{
+    "name": "entintar",
+    "version": "0.1.0",
+    "author": "Heinrich Göbl <hgoebl@goebl.com> (http://goebl.com/)",
+    "description": "Filter which colorizes text, e.g. output from maven",
+    "keywords": ["color", "maven", "filter", "console"],
+    "homepage": "https://github.com/hgoebl/entintar",
+    "licenses":[{
+        "type":"MIT",
+        "url": "http://github.com/hgoebl/entintar/raw/master/LICENSE"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hgoebl/entintar.git"
+    },
+    "dependencies": {
+        "optimist": ">= 0.3.0"
+    },
+    "devDependencies": {
+    },
+    "engines": {
+        "node": "*"
+    },
+    "scripts": {
+        "test": "node index.js < test/data/test-commons-lang.txt"
+    },
+    "main": "./index.js",
+    "bin": "./bin/entintar"
+}

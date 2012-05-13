@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>entintar</title>
+    <script src="//code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">entintar - view verbose output highlighted in your browser!</div>
+<div id="output">
+    <ul id="lines"></ul>
+</div>
+<script src="/socket.io/socket.io.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(function () {
+        var socket = io.connect();
+        
+        socket.on('line', function (data) {
+            $('<li/>').text(data).appendTo($('#lines'));
+        });
+    });
+
+</script>
+</body>
+</html>
