@@ -2,8 +2,6 @@
 
 This is a small tool to colorize and filter the verbose output of Maven or other unreadable text output.
 
-Does not work with DOS/Windows Command Box (cmd.exe) - use Cygwin instead.
-
 ## The name?
 
 'entintar' is Spanish and AKFAIK means something like ink or colorize. Colorizer was already used.
@@ -21,12 +19,26 @@ Options:
   --debug         output for easier debugging                  [default: false]
   --help, -h      show help and exit
 ```
+## Installation
+
+In most cases it make only sense to install entintar globally:
+
+    npm install entintar -g
+
+## Example Output
+
+![example output](https://github.com/hgoebl/entintar/blob/master/maven-colored.png?raw=true)
 
 ## Use with maven
 
-Install entintar globally:
+You could use entintar by placing the filter after each call to `mvn`. Example:
 
-    npm install entintar -g
+    mvn clean install -Pgf-redeploy | entintar
+
+Of course this is cumbersome. You better find a way to alias your mvn command and let your shell append the call
+to the filter.
+
+### Linux
 
 Place following lines in your ~/.bashrc:
 
@@ -44,9 +56,23 @@ If you want to run the maven command w/out coloring, then run
 
 This will ignore the bash alias and directly run the mvn command.
 
-## Example Output
+### Darwin
 
-![example output](https://github.com/hgoebl/entintar/blob/master/maven-colored.png?raw=true)
+**TODO** I don't have a Mac. @Apple, can you sponsor a MacBook to me, please? (Still waiting for an answer...)
+
+### Cygwin
+
+**TODO** My Windows7 node installation (0.6.18) doesn't work in Cygwin. Probably some cygpath calls could solve the problem.
+
+### Windows
+
+Out-of-the-box Windows lacks the support for `alias` like in bash.
+You have to fiddle around with DOSKEY, PowerShell and the like. Please tell me if you found a solution!
+
+Some probably helpful Links:
+
+  * <http://superuser.com/questions/150244/command-aliases-in-dos>
+  * <http://www.uberullu.com/alias-in-windows-command-line-ms-dos-how-to/>
 
 ## Extend
 
