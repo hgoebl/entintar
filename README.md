@@ -21,7 +21,7 @@ Options:
 ```
 ## Installation
 
-In most cases it make only sense to install entintar globally:
+In most cases it makes only sense to install entintar globally:
 
     npm install entintar -g
 
@@ -83,9 +83,17 @@ It is also possible to place a rules file elsewhere and provide the full path to
 
 ## TODO
 
-  * Refactor (especially index.js is kind of spagetti-code)
   * Write a real test (not just invoke the program)
 
 ## License
 
 MIT (see LICENSE file)
+
+## See also
+
+Similar Tools:
+  * <http://linux.die.net/man/1/ccze>
+
+Converting ANSI Colors to HTML:
+  * <http://www.pixelbeat.org/scripts/ansi2html.sh>
+  * <http://ziz.delphigl.com/tool_aha.php>

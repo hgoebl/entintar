@@ -1,6 +1,6 @@
 {
     "name": "entintar",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Heinrich Göbl <hgoebl@goebl.com> (http://goebl.com/)",
     "description": "Filter which colorizes text, e.g. output from maven",
     "keywords": ["color", "maven", "filter", "console"],
