@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/hgoebl/entintar.png)](http://travis-ci.org/hgoebl/entintar)
 # entintar
 
 This is a small tool to colorize and filter the verbose output of Maven or other unreadable text output.
